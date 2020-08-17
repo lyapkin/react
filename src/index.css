@@ -11,3 +11,116 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.get-data, .operators, .table {
+  padding: 5px 0;
+}
+button:not(.sort) {
+  margin-left: 5px;
+}
+
+
+.operators {
+  display: flex;
+  justify-content: space-between;
+}
+.add-row-container {
+  position: absolute;
+  background: rgba(0,0,0,0.7);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.add-row-form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 30%;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.add-row-form label {
+  margin: 0 auto 10px auto;
+}
+.add-row-form input {
+  display: block;
+}
+.add-row-container > button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+td{
+  background: gray;
+  border: 1px solid white;
+}
+.colomn-id {
+  width: 6%;
+}
+.table button {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin: 10px auto;
+}
+.active-page {
+  color: red;
+}
+
+
+
+
+
+
+
+.loader-container {
+	display: flex;
+	justify-content: center;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fdd;
+  border-color: #fdd transparent #fdd transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
